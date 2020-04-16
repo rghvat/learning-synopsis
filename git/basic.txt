@@ -1,0 +1,50 @@
+origin :- refers to source repo from which it was cloned
+master :- is default local branch in git
+
+git pull origin master
+	:- will pull changes from the origine remote's master branch and merge them to local checkout-branch
+
+
+git fetch :- it will only downloads new data from origin. it will not merge into the local master
+	     repository. it is harmless
+
+	     whereas git pull command download the changes and merge it to local repository
+	     
+git branch :- it essentially create new copy of master branch. 
+		usefulness of branch
+
+
+git checkout :- swifting one branch to another branch
+		Head pointer will move to second branch
+
+
+		working area
+		stagging area (via git add . )
+		commit area (via git commit -m)
+
+		this can be done in single step using command
+		git commit -am 'message'
+		{ git has ability to consolidate multiple changes in multiple file with a single commit.
+		  this is done by use of index data structure }
+
+git push origin <branch name> :- it will push changes to origin branch.
+
+
+git log :- 
+
+git diff :- show files changes in your working directory with respect to the current
+		branch in your local repo.
+
+git status :-	shows the staged, unstaged, untracked files
+
+
+
+
+scenario 1 :- suppose your git repository has a branch name test and you have cloned the master branch
+		git checkout -b test origin/test
+		when you push it gives you error nonfastforward error !!!!
+		someone else has made changes to the code in the test branch after you checkedout
+			do git pull
+			but there is possibility of code conflict with local changes.
+			console will list that
+
