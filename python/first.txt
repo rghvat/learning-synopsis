@@ -1,0 +1,31 @@
+Read the PEP to get the basic idea about the field.
+
+inspect module dir function;
+Help function returns docstring in python script
+dir function shows you list of all attribute and method of a particuler class's object dir(object)
+dir function without the argument shows list of names in current local spaces
+Be careful in shadowing of names in local and global namespace
+
+A closure is a function that wraps around another function and some number of variables and closes over or traps what it contains in it's own scope
+
+Point 1:
+Every thing is an object.
+class, meta class, string, int, float are object.
+
+POint 2:
+Everything in python can be grouped into a set!.
+collection of element, but in theory they are unique.
+
+
+Functors!
+List  compreshension
+Dict compreshension
+lambda expression
+bound and unbound function
+
+Enumerate
+
+functional and unit tests separate because functional tests should only break if 
+we are intentionally changing functionality of the system, whereas unit tests could 
+break during a refactoring or an implementation change.
+

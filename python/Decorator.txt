@@ -1,0 +1,5 @@
+Binding Behaviour :-
+	developer can define the behaviour and then bind it to a given property.
+
+Descriptor means binding the way a value can be set, get, delete for a given
+variable/ object/ dataset.

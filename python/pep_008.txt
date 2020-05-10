@@ -1,0 +1,97 @@
+
+what is difference between docstring and comment ?
+docstring is processed by the python interpretter, whereas the comment is 
+neglected by it.
+<inspect module, dir, help function uses this functionality>
+
+Increase the readability is main goal.
+consistency is key to success.
+
+donot break backward compatibilty
+
+four spaces per indentation level
+
+maximum line length 72 char
+
+with open('/path/to/some/file/you/want/to/read') as file_1, \
+     open('/path/to/some/file/being/written', 'w') as file_2:
+    file_2.write(file_1.read())
+
+
+should a line break before or after a binary operator?
+
+
+income = (gross_wages
+          + taxable_interest
+          + (dividends - qualified_dividends)
+          - ira_deduction
+          - student_loan_interest)
+
+
+Blank Lines:
+top level function and class definitions with two blank lines.
+
+method definitions inside a class are surrounded by a single blank line.
+
+use blank lines in functions to indicate logical sections.
+
+
+Source File Encoding
+python 3 default utf-8 no need to write at the top
+
+
+Import
+oneline per import
+standard library
+third party library
+local application/ library specific import
+
+
+Absolute imports are recommended
+
+spam(ham[1], {eggs: 2})
+foo = (0,)
+if x == 4: print x, y; x, y = y, x
+ham[1:9], ham[1:9:3], ham[:9:3], ham[1::3], ham[1:9:]
+ham[lower:upper], ham[lower:upper:], ham[lower::step]
+ham[lower+offset : upper+offset]
+ham[: upper_fn(x) : step_fn(x)], ham[:: step_fn(x)]
+ham[lower + offset : upper + offset]
+
+spam(1)
+dct['key'] = lst[index]
+x = 1
+y = 2
+long_variable = 3
+
+Avoid trailing whitespace anywhere.
+Always surround these binary operators with a single space on either side
+If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies)
+
+i = i + 1
+submitted += 1
+x = x*2 - 1
+hypot2 = x*x + y*y
+c = (a+b) * (a-b)
+
+def munge(input: AnyStr)
+
+Don't use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter.
+def complex(real, imag=0.0):
+    return magic(r=real, i=imag)
+
+
+Yes:   if greeting:
+No:    if greeting == True:
+Worse: if greeting is True:
+
+Yes: if not seq:
+     if seq:
+
+No:  if len(seq):
+     if not len(seq):
+
+
+
+
+
